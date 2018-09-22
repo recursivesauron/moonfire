@@ -1,0 +1,29 @@
+{
+  "name": "moonfire",
+  "version": "1.0.0",
+  "description": "A DOT discord project",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "node-opus": "^0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/recursivesauron/moonfire.git"
+  },
+  "keywords": [
+    "discord",
+    "js",
+    "nodejs"
+  ],
+  "author": "Recursive Sauron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/recursivesauron/moonfire/issues"
+  },
+  "homepage": "https://github.com/recursivesauron/moonfire#readme"
+}
