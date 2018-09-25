@@ -26,15 +26,17 @@ client.on('message', message => {
 
   const args = message.content.slice(prefix.length).split(/ +/);
   // rip out the first arg in the split array, lowercase it, and remove it from the array, creating an args only
-  const command = args.shift().toLowerCase();
+  const commandName = args.shift().toLowerCase();
 
-  if(!client.commands.has(command)){
+  if(!client.commands.has(commandName)){
     message.reply(`Unknown command. ${prefix}commands for a full list of available commands.`);
     return;
   }
 
+  const command = client.commands.get(commandName);
+
   try{
-    client.commands.get(command).execute(message, args);
+    command.execute(message, args);
   }
   catch(error){
     console.log(error);
